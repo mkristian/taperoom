@@ -1,0 +1,17 @@
+<%= _('Dear')%> <%= @order.name %>,
+
+<%= _('Thank you for your request for the following download')%><%= 's' if @order.items.size + @order.containers.size > 1 %>:
+<% i = 1
+@order.containers.each do |c| %><%= i%>. <%= c.archive_name %>
+<% i += 1
+end
+@order.items.each do |item| %><%= i%>. <%= item.file_name %>
+<% i += 1
+end
+%>
+<%= _('To download the above item')%><%= 's' if @order.items.size + @order.containers.size > 1 %> <%= _('please visit')%>:  http://<%= _('www.taperoom.dhamma.org')%> <%= _('and enter the following password')%>: <%= @order.password %>
+
+<%= _('This password will be valid for')%> <%= @time_to_live %> <%= _('days')%>.
+
+<%= _('With best wishes')%>,
+<%= _('Taperoom Team')%>

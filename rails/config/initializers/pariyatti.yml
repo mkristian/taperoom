@@ -1,0 +1,369 @@
+
+#-----------------------------------------
+# script/../app/controllers/admin_controller.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/controllers/application.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/controllers/containers_controller.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/controllers/download_controller.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/controllers/error_controller.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/controllers/items_controller.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/controllers/orders_controller.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/controllers/sessions_controller.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/controllers/system_configs_controller.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/guards/containers_guard.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/guards/items_guard.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/guards/orders_guard.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/guards/system_configs_guard.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/helpers/application_helper.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/helpers/containers_helper.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/helpers/items_helper.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/helpers/orders_helper.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/helpers/system_configs_helper.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/models/container.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/models/item.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/models/mailer.rb
+#-----------------------------------------
+mailer_subject: Pariyatti Download Confirmation
+mailer_from: Pariyatti Downloads <downloads@pariyatti.org>
+mailer_bcc: downloads@pariyatti.org
+
+#-----------------------------------------
+# script/../app/models/order.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/models/system_config.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# script/../app/models/user.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# containers/container_widget.rb
+#-----------------------------------------
+Directory: Directory
+
+#-----------------------------------------
+# containers/list_widget.rb
+#-----------------------------------------
+dropbox: dropbox
+move to directory: move to directory
+Name: Name
+File: File
+Exists?: Exists?
+Position: Position
+down: down
+up: up
+edit/delete: edit/delete
+
+#-----------------------------------------
+# containers/show.rb
+#-----------------------------------------
+list items: list files
+Scan: Scan
+scan the download directory recursively and make each file available for downloading: scan the download directory recursively and make each file available for downloading
+deleted files and files which were not scanned do not show up in the list: deleted files and files which were not scanned do not show up in the list
+each link opens the respective directory with its files and subdirectories: each link opens the respective directory with its files and subdirectories
+with the up and down button you can change the relative position of the file within each directory: with the up and down button you can change the relative position of the file within each directory
+
+#-----------------------------------------
+# download/access_denied.rb
+#-----------------------------------------
+access denied: access denied
+
+#-----------------------------------------
+# download/logged_out.rb
+#-----------------------------------------
+logged out: logged out
+
+#-----------------------------------------
+# download/login.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# download/login_widget.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# download/login_with_error.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# download/overview.rb
+#-----------------------------------------
+download overview: download overview
+Downloads: Orders
+Download: Order
+for: purchased by
+This material is copyrighted, and all rights are reserved. Please do not redistribute this material.: This material is copyrighted, and all rights are reserved. Please do not redistribute this material.
+Read more: <a href='http://www.pariyatti.org/AboutCopyrights/tabid/162/Default.aspx' target='_blank'>Read more</a> about copyrights and Pariyatti.
+logout: logout
+
+#-----------------------------------------
+# download/session_expired.rb
+#-----------------------------------------
+session expired: session expired
+
+#-----------------------------------------
+# errors/logged_in_error.rb
+#-----------------------------------------
+error: error
+
+#-----------------------------------------
+# errors/logged_out_error.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# items/edit.rb
+#-----------------------------------------
+edit/rename items: edit/rename items
+Filename: Filename
+Created at: Created at
+Updated at: Updated at
+Number of Attached Files: Number of Attached Files
+rename: rename
+file is attached to at least one download ticket: file is attached to at least one order
+delete: delete
+
+#-----------------------------------------
+# layouts/admin.rb
+#-----------------------------------------
+favicon: pariyatti.ico
+admin_title: pariyatti
+admin_css_file: pariyatti.css
+system configurations: system configurations
+files: files
+orders: orders
+
+#-----------------------------------------
+# layouts/base_widget.rb
+#-----------------------------------------
+input errors: input errors
+
+#-----------------------------------------
+# layouts/download.rb
+#-----------------------------------------
+download_title: pariyatti
+download_css_file: download.css
+
+#-----------------------------------------
+# layouts/page.rb
+#-----------------------------------------
+admin_email:
+Please report errors to: Please report errors to
+
+#-----------------------------------------
+# mailer/confirmation.rhtml
+#-----------------------------------------
+Dear: Dear
+Thank you for your request for the following download: Thank you for purchasing the following download
+To download the above item: To download the above item
+please visit: please visit
+www.taperoom.dhamma.org: www.pariyatti.org/Downloads/tabid/138/Default.aspx
+and enter the following password: and enter this password
+This password will be valid for: This password will be valid for
+days: days
+With best wishes: With best wishes
+Taperoom Team: Pariyatti
+
+#-----------------------------------------
+# mailer/error_notification.rhtml
+#-----------------------------------------
+
+#-----------------------------------------
+# mailer/ip_changed.rhtml
+#-----------------------------------------
+
+#-----------------------------------------
+# orders/edit.rb
+#-----------------------------------------
+edit order: edit order
+Edit Download Details: Edit Order Details
+
+#-----------------------------------------
+# orders/index.rb
+#-----------------------------------------
+list orders: List orders
+Email: Email
+Expiration date: Expiration date
+Show: Show
+Edit: Edit
+Destroy: Destroy
+
+#-----------------------------------------
+# orders/list_widget.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# orders/modify_order_widget.rb
+#-----------------------------------------
+Add files to download: Add files to order
+Add Files: Add Files
+Remove files from download: Remove files from order
+Remove Files: Remove Files
+
+#-----------------------------------------
+# orders/new.rb
+#-----------------------------------------
+new order: New order
+Create a new download: Create a new order
+
+#-----------------------------------------
+# orders/order_details_widget.rb
+#-----------------------------------------
+Contact Details: Contact Details
+Save Order: Save Order
+created on: created on
+last updated on: last updated on
+Full Name: Full Name
+Email Address: Email Address
+Files to be downloaded: Files to be downloaded
+Note: Note
+It will take a few minutes to prepare the Zip file for download. So please be patient after you click Save Download.: It will take a few minutes to prepare the Zip file for download. So please be patient after you click Save Order.
+There are no files to be downloaded. After you add some files to your order, you will be able to enter your contact information.: There are no files to be downloaded. After you add some files to your order, you will be able to enter your contact information.
+
+#-----------------------------------------
+# orders/orders_widget.rb
+#-----------------------------------------
+View Downloads: View Orders
+Each download expires after a set time. You may view: Each order expires after a set time. You may view
+Closed Downloads: Closed Order
+or: or
+Open Downloads: Open Order
+All Downloads: All Orders
+Current Download: Current Order
+Continue editing the download ticket.: Continue editing the order.
+Continue creating a download ticket.: Continue creating an order.
+New Download: New Order
+Allows you to create a new download.: Allows you to create a new order.
+Allows you to edit the details of a download.: Allows you to edit the details of an order.
+Displays the details of the download, and shows you the download links.: Displays the details of the order, and shows you the download links.
+Add / Remove files: Add / Remove files
+Select the desired files in the respective section and use: Select the desired files in the respective section and use
+to perform the action.: to perform the action.
+You also can browse through directories via the links under the directory names.: You also can browse through directories via the links under the directory names.
+Cancel Download: Cancel Order
+Discards edits made to an old download ticket.: Discards edits made to an old order.
+Discards changes made to a new download ticket.: Discards changes made to a new order.
+All Orders: All Orders
+Open Orders: Open Orders
+Closed Orders: Closed Orders
+Cancel Order: Cancel Order
+Current Order: Current Order
+New Order: New Order
+Edit Download: Edit Order
+
+#-----------------------------------------
+# orders/overview_widget.rb
+#-----------------------------------------
+Please be patient while you wait for your download to start.: Please be patient while you wait for your download to start.
+Bulk download files are in Zip format.: Bulk download files are in Zip format.
+Windows users should not require additional software to unzip these files. After downloading a Zip file, you can unzip it by right-clicking on the file and choosing Extract All: Windows users should not require additional software to unzip these files. After downloading a Zip file, you can unzip it by right-clicking on the file and choosing Extract All
+Mac users may need to install additional software to unzip these files. After downloading a Zip file, if double-clicking on the file does not unzip it, then please install: Mac users may need to install additional software to unzip these files. After downloading a Zip file, if double-clicking on the file does not unzip it, then please install
+Zipeg: Zipeg
+Linux users do not require additional software to unzip these files: Linux users do not require additional software to unzip these files
+
+#-----------------------------------------
+# orders/show.rb
+#-----------------------------------------
+show order: show order
+Show Download Details: Show Order Details
+
+#-----------------------------------------
+# sessions/access_denied.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# sessions/login.rb
+#-----------------------------------------
+
+#-----------------------------------------
+# sessions/login_widget.rb
+#-----------------------------------------
+User Name: User Name
+Password: Password
+Login: Login
+
+#-----------------------------------------
+# system_configs/edit.rb
+#-----------------------------------------
+edit system configuration: edit system configuration
+Session time to live in minutes (adminstrator): Session time to live in minutes (adminstrator)
+Session time to live in minutes (customer): Session time to live in minutes (customer)
+Time to live of an order in days: Time to live of an order in days
+Time to archive closed orders in months: Time to archive closed orders in months
+Download directory: Download directory
+Temp Download directory: Temp Download directory
+Dropbox directory: Dropbox directory
+Download password length: Download password length
+Notification email on errors: Notification email on errors
+Expected IP of the server: Expected IP of the server (can be empty)
+Notification email on IP changes of the server: Notification email on IP changes of the server
+Update: Update
+Reset "root" password: Reset "root" password
+Reset "admin" password: Reset "admin" password
+
+#-----------------------------------------
+# obsolete entries in the flavour file
+#-----------------------------------------
+#Number of Attached to Orders: Number of Attached to Orders

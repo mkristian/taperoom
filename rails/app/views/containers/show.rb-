@@ -1,0 +1,64 @@
+class Views::Containers::Show < Views::Layouts::Admin
+
+  def initialize(view, assigns, stream)
+    super(view, assigns, stream, _("list items"))
+    @items_widget = 
+      Views::Containers::ContainerWidget.new(view, assigns, stream, Views::Containers::ListWidget)
+  end
+
+  def render_script
+# 2841a5fc-aaa1-4ef4-895e-b802d2db4ff0 localhost
+# 26a725a3-ede6-4ee1-bc60-11d73cf6aef8  www.taperoom.dhamma.org
+# 3da21eac-ccb3-4b86-a959-34f7b28180eb taperoom.dreamhosters.com
+    script <<-CODE
+  function InvokePanel () {
+     if ('createEvent' in document) {
+        var element = document.createElement('FireuploaderPanelElement'); 
+        element.setAttribute('uploadUrl', '#{@upload_url}'); 
+        element.setAttribute('uploadFieldName', 'uploadedfile'); 
+        element.setAttribute('siteId', '2841a5fc-aaa1-4ef4-895e-b802d2db4ff0'); 
+        element.setAttribute('allowedFileExtensions', ''); 
+        document.documentElement.appendChild(element); 
+
+        var evt = document.createEvent('Events'); 
+        evt.initEvent('FireuploaderPanelEvent', true, false); 
+        element.dispatchEvent(evt); 
+     }
+  }
+  window.addEventListener('FireuploaderBatchUploadComplete', function (evt) { 							
+     window.location = '#{container_path(@container.id)}'
+}, false);
+
+InvokePanel();
+CODE
+  end
+
+  def render_sidebar
+    if allowed(:items, :scan)
+      h2 _("Scan")
+      p _("scan the download directory recursively and make each file available for downloading")
+      p _("deleted files and files which were not scanned do not show up in the list")
+      h2 _("Directory")
+      p _("each link opens the respective directory with its files and subdirectories")
+      h2 _("Position")
+      p _("with the up and down button you can change the relative position of the file within each directory")
+    end
+  end
+
+  def render_content
+    fieldset :class => :items do
+      legend _("list items")
+ 
+      if allowed(:items, :scan)
+        div :class => :nav do
+          button_to _('Scan'), scan_container_path(@container.id), :method => :put, :class => :button
+        end
+      end
+
+      render_message
+
+      @items_widget.render_to(self)
+
+    end
+  end
+end

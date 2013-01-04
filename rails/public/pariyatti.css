@@ -1,0 +1,272 @@
+body { background-color: #fff; color: #000; }
+
+body, td, th {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   .8em;
+      line-height: 1.2em;
+}
+#content{
+background-color: white;
+}
+.note{
+color: red;
+padding: 1em;
+}
+#sidebar{
+float: right;
+width: 17%;
+padding-left: 1%;
+padding-right: 1%;
+margin-right: 1%;
+}
+#sidebar h2 {
+font-size: 1.2em;
+color: #4b0f0b;
+}
+#sidebar h3{
+font-size: 1em;
+margin-bottom: -.7em;
+color: #4b0f0b;
+}
+#sidebar a{
+padding: 0;
+border: 0;
+color: 4b0f0b;
+text-decoration: underline;
+}
+#sidebar a:hover{
+text-decoration: none;
+}
+#content {
+float: left;
+width: 80%;
+}
+#footer{
+clear: both;
+}
+.orders form fieldset div.details div, .orders .item{
+float: left;
+width: 50%;
+}
+.left {
+float: left;
+width: 50%;
+}
+.right {
+float: right;
+width: 50%;
+}
+.orders .overview, .orders .details {
+clear: both;
+}
+table.index
+{
+border-collapse: collapse;
+}
+table.index td {
+padding: .2em;
+}
+#header input {
+background-color: #e4c084;
+border-top: 0px;
+border-bottom: 0px;
+}
+a, #header input {
+color: 4b0f0b;
+text-decoration: underline;
+margin-left: -1px;
+padding-left: .5em;
+padding-right: 1em;
+border-left: 1px solid;
+border-right: 1px solid;
+cursor: pointer;
+}
+
+ .overview table a, .orders table a {
+border: 0;
+margin-left: -.5em;
+text-decoration: underline;
+}
+.overview a:hover, .orders a:hover{
+border: 0;
+text-decoration: none;
+}
+a:visited { color: navy; }
+.download a { color: 4b0f0b; border: 0; text-decoration: underline;}
+a:hover {text-decoration: none;}
+
+#header {
+padding-top: .8em;
+padding-right: .5em;
+padding-bottom: 2em;
+background-color: #e4c084;
+}
+#header div {
+float: right;
+}
+#body{
+clear: both;
+}
+#footer{
+background-color: #f4ede4;
+padding: 1em;
+padding-bottom: 2em;
+margin-top: 1em;
+}
+#footer div{
+float:right;
+}
+
+fieldset {
+margin: .5em;
+ border: solid 1px;
+}
+input{
+font-size: .9em;
+}
+.items td.buttons .lastdisabledtrue input, .items td.buttons .firstdisabledtrue input{
+color: white;
+cursor: text;
+border: 0;
+}
+.items td.buttons .lastdisabledtrue:hover, .items td.buttons .firstdisabledtrue:hover{
+border-bottom: 0px;
+}
+.nav .button:hover, .orders .button:hover, .items .button:hover {
+border-bottom: solid #4b0f0b .2em;
+}
+.nav .button, .orders .button, .items .button {
+margin-top: -1em;
+float: right;
+border-top: 0;
+border-bottom: white solid .2em;
+margin-left: -1px;
+padding-left: .5em;
+padding-right: 1em;
+border-left: 1px solid;
+border-right: 1px solid;
+color: black;
+background-color: white;
+cursor: pointer;
+}
+.orders form fieldset .nav {
+margin-top: -.02em;
+}
+.orders .details, .orders .list{
+clear: both;
+padding-top: .5em;
+}
+.orders .list ul{
+margin: 0em;
+padding-left: 1.5em;
+}
+.orders .nav .selected_true {
+color: #4b0f0b;
+}
+.nav .button{
+margin-top: -1em;
+}
+div.nav{
+margin-top: -1em;
+}
+.timestamps{
+font-size: .8em;
+}
+.orders table {
+clear: both;
+}
+td.buttons {
+width: 30%;
+}
+.dir{
+margin-bottom: .5em;
+}
+.dir a, .items ul a{
+padding: 0;
+border: 0;
+text-decoration: underline;
+}
+
+.dir a:hover, .items ul a:hover{
+text-decoration: none;
+}
+
+.items ul{
+margin: 0;
+padding-left: 1em;
+list-style-type: disc;
+}
+
+.errors {
+margin-top: 0;
+margin-bottom: .5em;
+clear: both;
+padding-bottom: .5em;
+}
+.message, .errors legend {
+color: red;
+font-weight: bold;
+}
+th, .odd *, .odd .button, td {
+background-color: white;
+}
+.even *, .even .button {
+background-color: #f7f7f7;
+border-bottom: #f7f7f7;
+}
+.orders .index td.buttons {
+padding-left: 0;
+width: auto;
+}
+.orders .index input.button {
+margin: 0;
+}
+.items .button{
+margin-top: 0;
+}
+.items .buttons{
+border: 0;
+padding: 0;
+width: auto;
+}
+.orders .directories {
+padding-bottom: .5em;
+}
+.orders .directories a {
+border: 0;
+}
+.orders .files {
+padding-top: .5em;
+clear: both;
+}
+.orders .overview a, #footer a{
+border: 0;
+}
+.dropbox .item{
+clear: both;
+}
+.dropbox .list .button {
+border: 0;
+background-color: white;
+border-left: 1px solid black;
+border-right: 1px solid black;
+margin-left: -1px;
+}
+.dropbox .list .button:hover{
+border-bottom: 2px solid black;
+}
+.dropbox .list span{
+margin-left: 1em;
+margin-right: 1em;
+}
+.dropbox .list .item * {
+float: left;
+margin-top: 0;
+margin-bottom: 0;
+}
+.dropbox .nav{
+margin-top: 0em;
+}
+#divFileProgressContainer{
+height: 3.7em;
+}

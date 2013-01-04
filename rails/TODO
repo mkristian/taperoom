@@ -1,0 +1,21 @@
+* when craeting a download ticket with an empty directory sends off
+   the email but the zip is empty and actually there will be no zip
+   file. maybe some warning or even disable to chackbox in such a case.
+
+* added password_length to GWT configuration
+
+* delete empty directory (with open orders)
+
+* get trashpath for container
+
+* clean up trash when cleaning obsolete orders
+
+* maybe cleanup trash as well
+
+* upload without javascript
+
+* upload from webkit
+
+* sorting in directories in files
+
+* Tikapaṭṭhāna (Day 5 - SNG).mp4 gives an error

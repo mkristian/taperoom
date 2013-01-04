@@ -1,0 +1,29 @@
+mailer_subject: 'Vipassana Taperoom Download Request'
+mailer_from: 'downloads@taperoom.dreamhosters.com'
+favicon: taperoom.ico
+download_css_file: taperoom.css
+admin_css_file: taperoom.css
+download_title: taperoom
+admin_title: taperoom
+orders: downloads
+admin_email: admin@taperoom.dhamma.org
+# ------------
+# orders views
+# ------------
+new order: New download
+Create a new order: Create a new download
+add to order: Add file to download
+add selected files to order: Add selected files to download
+All Orders: All Downloads
+Open Orders: Open Downloads
+Closed Orders: Closed Downloads
+New Order: New Download
+Current Order: Current Download
+list orders: List downloads
+Customer's Details: Contact Details
+Customer's Files: Download Files
+delete selected files: Delete selected files
+Save Order: Save Download
+Cancel Order: Cancel Download
+browse files to add more above order: browse files to add more above download
+Read more: 

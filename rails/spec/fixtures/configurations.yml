@@ -1,0 +1,7 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  session_live_to_live: 1
+
+two:
+  session_live_to_live: 1
